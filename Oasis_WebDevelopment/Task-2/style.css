@@ -22,7 +22,6 @@ body {
     height: 260px;
     object-fit: cover;
     border-radius: 12px;
-    /* Changed from 50% to 12px for square corners */
     box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3);
     border: 6px solid #0ea5e9;
     background: #fff;
