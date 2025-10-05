@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.calculator {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(102, 166, 255, 0.2);
+    width: 320px;
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    margin-bottom: 18px;
+    text-align: right;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #66a6ff;
+    background: #f7fbff;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.buttons button {
+    padding: 18px 0;
+    font-size: 1.25em;
+    border: none;
+    border-radius: 8px;
+    background: #66a6ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(102, 166, 255, 0.08);
+}
+
+.buttons button:hover {
+    background: #89f7fe;
+    color: #333;
+    transform: translateY(-2px) scale(1.05);
+}
+
+.buttons button:active {
+    background: #4e8cff;
+    color: #fff;
+    transform: scale(0.98);
+}
+
+/* Special styling for operator and clear buttons */
+.buttons button:nth-child(4),
+.buttons button:nth-child(8),
+.buttons button:nth-child(12),
+.buttons button:nth-child(16) {
+    background: #ffb86c;
+    color: #fff;
+}
+
+.buttons button:nth-child(4):hover,
+.buttons button:nth-child(8):hover,
+.buttons button:nth-child(12):hover,
+.buttons button:nth-child(16):hover {
+    background: #ffd6a5;
+    color: #333;
+}
+
+.buttons button:last-child {
+    background: #ff6b6b;
+}
+
+.buttons button:last-child:hover {
+    background: #ffb6b6;
+    color: #333;
+}
